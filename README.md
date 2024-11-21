@@ -34,18 +34,20 @@ Para ejecutar este proyecto necesitas:
 
 ## Instalación
 1. Clonar el repositorio:
-    ´´´bash
+    ```bash
     git clone https://github.com/tuusuario/conversor-monedas.git
     cd conversor-monedas
 
 2. Configurar la clave de API: En la clase ConsultaMoneda, reemplaza el valor de ApiKey con tu clave personal de la API de ExchangeRate-API:
-    java
+    ```java
     private String ApiKey = "TU_CLAVE_API";
 
 3. Compilar el proyecto:
+    ```bash
     javac -d bin src/**/*.java
 
 4. Ejecutar el programa:
+    ```bash
     java -cp bin src.principal.principal
 
 ## Uso
@@ -55,6 +57,7 @@ Para ejecutar este proyecto necesitas:
 4. Obtén el resultado convertido en la moneda destino.
 
 ## Estructura del Proyecto
+```
 ConversorDeMonedas/
 ├── src/
 │   ├── principal/
@@ -63,6 +66,7 @@ ConversorDeMonedas/
 │   │   ├── ConsultaMoneda.java
 │   │   └── MonedaExchange.java
 ├── README.md
+```
 
 ## API Utilizada
 Este proyecto utiliza [ExchangeRate-API](https://www.exchangerate-api.com/) para obtener datos actualizados de las tasas de cambio.

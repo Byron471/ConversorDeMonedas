@@ -1,4 +1,6 @@
-package src;
+package src.modelos;
 
-public record Moneda(String base_code, String conversion_rates) {
+import java.util.Map;
+
+public record MonedaExchange(String base_code, Map<String, Double> conversion_rates) {
 }

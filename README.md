@@ -10,10 +10,10 @@ Este es un programa de consola en Java que permite convertir entre diferentes mo
 - [API Utilizada](#api-utilizada)
 
 
-Descripción
+## Descripción
 El Conversor de Monedas es una herramienta que permite convertir montos de una moneda a otra, utilizando datos proporcionados por la API [ExchangeRate-API](https://www.exchangerate-api.com/). Es ideal para estudiantes o desarrolladores que buscan aprender a integrar APIs en sus proyectos Java.
 
-Características
+## Características
 - Convertir entre monedas populares como:
     - Dólar estadounidense (USD)
     - Peso argentino (ARS)
@@ -24,7 +24,7 @@ Características
 - Manejo de errores en las solicitudes de la API.
 
 
-Requisitos
+## Requisitos
 Para ejecutar este proyecto necesitas:
 
 - Java Development Kit (JDK) 11 o superior.
@@ -32,8 +32,9 @@ Para ejecutar este proyecto necesitas:
 - Conexión a Internet (para consultar las tasas de cambio).
 
 
-Instalación
+## Instalación
 1. Clonar el repositorio:
+    ´´´bash
     git clone https://github.com/tuusuario/conversor-monedas.git
     cd conversor-monedas
 
@@ -47,23 +48,23 @@ Instalación
 4. Ejecutar el programa:
     java -cp bin src.principal.principal
 
-Uso
+## Uso
 1. Ejecuta el programa.
 2. Selecciona una opción del menú (por ejemplo, convertir de dólar a peso argentino).
 3. Ingresa la cantidad de la moneda de origen.
 4. Obtén el resultado convertido en la moneda destino.
 
-Estructura del Proyecto
+## Estructura del Proyecto
+ConversorDeMonedas/
+├── src/
+│   ├── principal/
+│   │   └── principal.java
+│   ├── modelos/
+│   │   ├── ConsultaMoneda.java
+│   │   └── MonedaExchange.java
+├── README.md
 
-├── src
-│   ├── principal
-│   │   └── principal.java        # Clase principal que contiene el menú.
-│   ├── modelos
-│       ├── ConsultaMoneda.java   # Clase para interactuar con la API.
-│       ├── MonedaExchange.java   # Clase record que mapea los datos de la API.
-├── README.md                     # Documentación del proyecto.
-
-API Utilizada
+## API Utilizada
 Este proyecto utiliza [ExchangeRate-API](https://www.exchangerate-api.com/) para obtener datos actualizados de las tasas de cambio.
 
 URL base: https://v6.exchangerate-api.com/v6/
